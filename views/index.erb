@@ -1,0 +1,9 @@
+<h1><%= @title %></h1>
+
+<a href="/?sort=desc">Sort Descending</a>
+<ol>
+  <% @towns.each do |town| %>
+    <li><a href="/towns/<%= town %>"><%= town %></a></li>
+  <% end %>
+</ol>
+

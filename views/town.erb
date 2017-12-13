@@ -1,0 +1,11 @@
+<h1>The Town of <%= @town_name %></h1>
+
+<h3>Population Data</h3>
+<% @town.population_data.each do |year, population| %>
+  <dl>
+    <dt><%= year %></dt>
+    <dd><%= population %></dt>
+  </dl>
+<% end %>
+
+<a href="/">Back to Town Listing</a>
