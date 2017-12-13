@@ -19,4 +19,11 @@ class Town
     end
     city_data
   end
+
+  def to_json
+    {
+      name: @name,
+      population_data: @population_data
+    }
+  end
 end

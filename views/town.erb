@@ -1,4 +1,4 @@
-<h1>The Town of <%= @town_name %></h1>
+<!-- <h1>The Town of <%= @town_name %></h1>
 
 <h3>Population Data</h3>
 <% @town.population_data.each do |year, population| %>
@@ -6,6 +6,15 @@
     <dt><%= year %></dt>
     <dd><%= population %></dt>
   </dl>
-<% end %>
+<% end %> -->
+
+<div id="town-data">
+  
+</div>
 
 <a href="/">Back to Town Listing</a>
+
+<script src="/javascripts/show.js"></script>
+<script type="text/javascript">
+  fetchTownData("<%= @town_name %>")
+</script>
